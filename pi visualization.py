@@ -48,7 +48,7 @@ def render():
         screen.set_at([x[i],y[i]],(color[i][0]*255,color[i][1]*255,color[i][2]*255))
     #screen.unlock()
     print(time.time()-startDrawing)
-print(coprime/coprime+notcoprime)
+print(coprime/(coprime+notcoprime))
 render()
 pygame.display.flip()
 
