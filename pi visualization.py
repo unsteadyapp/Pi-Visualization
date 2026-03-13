@@ -64,8 +64,9 @@ while True:
             pygame.display.flip()
         elif event.type == pygame.KEYDOWN:
             if(event.key == pygame.K_SPACE):
+                screen.fill((0,0,0))
                 cursor = pygame.mouse.get_pos()
-                toBlit = font.render(f"({cursor[0]},{cursor[1]},{color[cursor[0]]})",True,(0,0,0))
+                toBlit = font.render(f"({cursor[0]},{cursor[1]},{color[cursor[0]]})",True,(255,0,0))
                 render()
                 screen.blit(toBlit,cursor)
                 pygame.display.flip()
