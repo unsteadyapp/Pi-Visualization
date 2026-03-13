@@ -52,6 +52,7 @@ def render():
 print(f"The ratio of coprime to not coprime is: {coprime/(coprime+notcoprime)}")
 print(f"The target (6/pi^2) is {TARGET}")
 print(f"The diffrence is {abs(TARGET-(coprime/(coprime+notcoprime)))}")
+print(f"Estimate of PI based on ratio: {(6/(coprime/(coprime+notcoprime)))**0.5}")
 render()
 pygame.display.flip()
 
